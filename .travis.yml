@@ -9,7 +9,7 @@ before_script:
 
 script:
   - black . --check
-  - flake8
+  - flake8 .
   - coverage run --source='.' manage.py test
 
 after_script:
